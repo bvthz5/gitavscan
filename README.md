@@ -9,7 +9,7 @@ This is a proof of concept, and does not provide any guarantee that carefully hi
 ## Example usage
 
 ```
-uses: djdefi/gitavscan@main
+uses: djdefi/gitavscan@master
 with:
   full: '--full'
 ```
@@ -26,11 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     name: History AV Scan
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
       with:
         fetch-depth: '0'
     - name: Git AV Scan
-      uses: djdefi/gitavscan@main
+      uses: djdefi/gitavscan@master
       with:
         full: '--full'
 ```  
@@ -45,9 +45,9 @@ jobs:
     runs-on: ubuntu-latest
     name: AV scan
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
     - name: Git AV Scan
-      uses: djdefi/gitavscan@main
+      uses: djdefi/gitavscan@master
 ``` 
 
 ## Running locally with Docker
